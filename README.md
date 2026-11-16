@@ -1,4 +1,4 @@
-# Daily Spark
+# Smart Task Manager
 
 Build a full-stack web application called "Smart Daily Task Manager with Reward System". This is a software-only capstone project focused on productivity, time management, and user motivation through gamification.
 

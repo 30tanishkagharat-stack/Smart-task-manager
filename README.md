@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# Daily Spark
 
-## Project info
+Build a full-stack web application called "Smart Daily Task Manager with Reward System". This is a software-only capstone project focused on productivity, time management, and user motivation through gamification.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Purpose:
+To help users manage daily tasks efficiently by setting reminders, receiving alerts, tracking completion status, and earning rewards/points to stay motivated.
 
-## How can I edit this code?
+Core Features:
+1. User authentication (signup, login, logout).
+2. Personalized dashboard after login.
+3. Create, edit, delete daily tasks.
+4. Set date and time reminders for each task.
+5. Real-time alert/notification system when task time arrives.
+6. Mark task as completed.
+7. Reward system: users earn points for each completed task.
+8. Level system (Beginner, Consistent, Achiever, Master) based on points.
+9. Daily streak tracking and streak counter.
+10. Progress charts (tasks completed per day/week).
+11. Motivational message popup after task completion.
+12. Admin panel to monitor overall system usage.
 
-There are several ways of editing your application.
+User Flow:
+- User registers or logs in.
+- User adds tasks with deadlines and reminder times.
+- System sends notification at scheduled time.
+- User marks task as completed.
+- System awards points and updates streak and level.
+- User views progress analytics in dashboard.
 
-**Use Lovable**
+Data Model:
+- Users (id, name, email, password, role, total_points, level, streak_count)
+- Tasks (id, user_id, title, description, due_date, reminder_time, status)
+- Rewards (id, user_id, points_earned, date)
+- Notifications (id, user_id, task_id, message, sent_at)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Design Preferences:
+- Modern clean UI.
+- Soft gradient background (blue and purple tones).
+- Responsive design for mobile and desktop.
+- Sidebar dashboard layout.
+- Simple gamified badges for achievements.
 
-Changes made via Lovable will be committed automatically to this repo.
+Include backend, database, authentication setup, seeded sample users and tasks for demo purposes. The application should be fully functional and suitable for final year software engineering project demonstration.
 
-**Use your preferred IDE**
+This project was built with [Lovable](https://lovable.dev).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Live app**: https://levelfy-tasks.lovable.app
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Build with Lovable
 
-Follow these steps:
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/93a0f2b3-42bb-4f27-a3ba-e81d0424c985).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
